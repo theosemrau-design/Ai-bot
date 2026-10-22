@@ -1,6 +1,6 @@
 # AI-Bot
 
-> [Caution]
+> [!Caution]
 > For this ai you need to install uv with:
 ```bash
 [sudo] apt install uv
@@ -17,5 +17,5 @@ Then run the file with uv and use --verbose to get a more detailed output:
 ```bash
 uv run main.py <prompt> [--verbose]
 ```
-> [Tip]
+> [!Tip]
 > When the ai doesn't do what you want go in the prompts file and edit the system prompt
