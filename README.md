@@ -1,11 +1,11 @@
 # AI-Bot
 
 > [!Caution]
-> For this ai you need to install uv with:
+> For this ai you need to ave uv installed. You can install it with:
 ```bash
 [sudo] apt install uv
 ```
-You need to purchase an openrouter api key and add a .env file with the format.
+You need to purchase an openrouter api key and add a .env file with the format:
 ```python
 OPENROUTER_API_KEY=<your key>
 ```
