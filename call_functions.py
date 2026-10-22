@@ -3,6 +3,7 @@ from functions.get_file_content import *
 from functions.run_python_file import *
 from functions.write_file import *
 from collections.abc import Callable
+from config import *
 import json
 available_functions: list[Callable[[str, str], str]] = [
     schema_get_files_info,
@@ -19,7 +20,7 @@ function_map: dict[str, Callable[..., str]] = {
 def call_function(tool_call, verbose: bool = False) -> dict[str, str|dict[str, str]]:
     function_name: str = tool_call.function.name
     function_args: dict[str, dict[str, str]] = json.loads(tool_call.function.arguments or "{}")
-    function_args["working_directory"] = "./calculator"
+    function_args["working_directory"] = WORKING_DIRECTORY
 
     if function_name not in function_map:
         return {
