@@ -1,0 +1,10 @@
+[project]
+name = "ai-bot"
+version = "0.1.0"
+description = "An ai bot, that can help you code by reading directorys and files, writing files an running files"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai==2.44.0",
+    "python-dotenv==1.1.0",
+]
